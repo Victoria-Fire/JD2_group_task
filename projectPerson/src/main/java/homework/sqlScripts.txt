@@ -1,0 +1,16 @@
+create table lesson_8.person
+(
+    id      int auto_increment
+        primary key,
+    name    char(100) null,
+    surname char(100) null,
+    constraint person_id_uindex
+        unique (id)
+);
+
+insert into person(id, name, surname)
+VALUES (1, 'Jack', 'Black');
+insert into person(id, name, surname)
+VALUES (2, 'John', 'White');
+insert into person(id, name, surname)
+VALUES (3, 'Tom', 'Cat');

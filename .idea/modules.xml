@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/JD2_group_task.iml" filepath="$PROJECT_DIR$/.idea/JD2_group_task.iml" />
+      <module fileurl="file://$PROJECT_DIR$/projectPerson/projectPerson.iml" filepath="$PROJECT_DIR$/projectPerson/projectPerson.iml" />
+    </modules>
+  </component>
+</project>
