@@ -22,11 +22,9 @@ public class DAOImpl implements DAO {
 
     @Override
     public void select(String request) {
-        System.out.println("Выполняется запрос в базу данных");
+        System.out.println("Выполняется запрос в базу данных...");
         System.out.println("===========================================");
-        try {
-            Connection conn = getConnection();
-            Statement statement = conn.createStatement();
+        try (Statement statement = getConnection().createStatement()) {
             try (ResultSet resultSet = statement.executeQuery(request)) {
                 while (resultSet.next()) {
                     System.out.println(resultSet.getInt(1) + " "
@@ -45,11 +43,9 @@ public class DAOImpl implements DAO {
 
     @Override
     public void update(String request) {
-        System.out.println("База данных обновляется!");
+        System.out.println("База данных обновляется...");
         System.out.println("===========================================");
-        try {
-            Connection conn = getConnection();
-            Statement statement = conn.createStatement();
+        try (Statement statement = getConnection().createStatement()){
             statement.executeUpdate(request);
             System.out.println("База данных успешно обновлена!");
         } catch (SQLException throwables) {
@@ -60,11 +56,9 @@ public class DAOImpl implements DAO {
 
     @Override
     public void delete(String request) {
-        System.out.println("Информация удаляется из базы данных!");
+        System.out.println("Информация удаляется из базы данных...");
         System.out.println("===========================================");
-        try {
-            Connection conn = getConnection();
-            Statement statement = conn.createStatement();
+        try (Statement statement = getConnection().createStatement()){
             statement.executeUpdate(request);
             System.out.println("Информация в базе данных успешно удалена!");
         } catch (SQLException throwables) {
@@ -75,11 +69,9 @@ public class DAOImpl implements DAO {
 
     @Override
     public void insert(String request) {
-        System.out.println("Информация в базе данных обновляется!");
+        System.out.println("Информация в базе данных обновляется...");
         System.out.println("===========================================");
-        try {
-            Connection conn = getConnection();
-            Statement statement = conn.createStatement();
+        try (Statement statement = getConnection().createStatement()){
             statement.executeUpdate(request);
             System.out.println("Информация в базе данных успешно обновлена!");
         } catch (SQLException throwables) {
