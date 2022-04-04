@@ -11,11 +11,11 @@ import homework.actions.CommandHandler;
  */
 public class Controller {
 
-    private static final Controller instance = new Controller();
+    private static final Controller INSTANCE = new Controller();
     private final CommandHandler commandHandler = new CommandHandler();
 
     public static Controller getInstance() {
-        return instance;
+        return INSTANCE;
     }
 
     public void executeRequest(String request) {

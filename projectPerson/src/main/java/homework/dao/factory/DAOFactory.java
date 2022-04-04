@@ -10,14 +10,14 @@ import homework.dao.impl.DAOImpl;
  */
 public class DAOFactory {
 
-    private static final DAOFactory instance = new DAOFactory();
+    private static final DAOFactory INSTANCE = new DAOFactory();
     private final DAO daoImpl = new DAOImpl();
 
     public DAOFactory() {
     }
 
     public static DAOFactory getInstance() {
-        return instance;
+        return INSTANCE;
     }
 
     public DAO getImplThroughDAO() {

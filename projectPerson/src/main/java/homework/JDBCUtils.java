@@ -14,9 +14,9 @@ public class JDBCUtils {
     public static final String USER_KEY = "user";
     public static final String PASSWORD_KEY = "password";
 
-    private static final ResourceBundle resource = ResourceBundle.getBundle(DATABASE_RESOURCE);
+    private static final ResourceBundle RESOURCE = ResourceBundle.getBundle(DATABASE_RESOURCE);
 
     public static String getValue(String key) {
-        return resource.getString(key);
+        return RESOURCE.getString(key);
     }
 }
