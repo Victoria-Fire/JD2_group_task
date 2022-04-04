@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.29">
+<file name="D:\Мои проекты Git\JD2_group_task\projectPerson\src\main\java\homework\actions\CommandHandler.java">
+</file>
+<file name="D:\Мои проекты Git\JD2_group_task\projectPerson\src\main\java\homework\actions\enums\CommandNames.java">
+</file>
+<file name="D:\Мои проекты Git\JD2_group_task\projectPerson\src\main\java\homework\actions\impl\DeleteFromDB.java">
+</file>
+<file name="D:\Мои проекты Git\JD2_group_task\projectPerson\src\main\java\homework\actions\impl\InsertIntoDB.java">
+</file>
+<file name="D:\Мои проекты Git\JD2_group_task\projectPerson\src\main\java\homework\actions\impl\SelectFromDB.java">
+</file>
+<file name="D:\Мои проекты Git\JD2_group_task\projectPerson\src\main\java\homework\actions\impl\UpdateDB.java">
+</file>
+<file name="D:\Мои проекты Git\JD2_group_task\projectPerson\src\main\java\homework\actions\impl\WrongRequest.java">
+</file>
+<file name="D:\Мои проекты Git\JD2_group_task\projectPerson\src\main\java\homework\actions\interfaces\Command.java">
+</file>
+<file name="D:\Мои проекты Git\JD2_group_task\projectPerson\src\main\java\homework\App.java">
+</file>
+<file name="D:\Мои проекты Git\JD2_group_task\projectPerson\src\main\java\homework\beans\Person.java">
+</file>
+<file name="D:\Мои проекты Git\JD2_group_task\projectPerson\src\main\java\homework\controller\Controller.java">
+</file>
+<file name="D:\Мои проекты Git\JD2_group_task\projectPerson\src\main\java\homework\dao\factory\DAOFactory.java">
+</file>
+<file name="D:\Мои проекты Git\JD2_group_task\projectPerson\src\main\java\homework\dao\impl\DAOImpl.java">
+</file>
+<file name="D:\Мои проекты Git\JD2_group_task\projectPerson\src\main\java\homework\dao\interfaces\DAO.java">
+</file>
+<file name="D:\Мои проекты Git\JD2_group_task\projectPerson\src\main\java\homework\JDBCUtils.java">
+</file>
+<file name="D:\Мои проекты Git\JD2_group_task\projectPerson\src\main\resources\lesson_8.properties">
+</file>
+</checkstyle>

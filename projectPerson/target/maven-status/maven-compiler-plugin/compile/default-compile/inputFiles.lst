@@ -1,2 +1,15 @@
-D:\Мои проекты Maven\projectPerson\src\main\java\homework\App.java
-D:\Мои проекты Maven\projectPerson\src\main\java\homework\Person.java
+D:\Мои проекты Git\JD2_group_task\projectPerson\src\main\java\homework\dao\interfaces\DAO.java
+D:\Мои проекты Git\JD2_group_task\projectPerson\src\main\java\homework\JDBCUtils.java
+D:\Мои проекты Git\JD2_group_task\projectPerson\src\main\java\homework\actions\impl\WrongRequest.java
+D:\Мои проекты Git\JD2_group_task\projectPerson\src\main\java\homework\actions\interfaces\Command.java
+D:\Мои проекты Git\JD2_group_task\projectPerson\src\main\java\homework\actions\impl\UpdateDB.java
+D:\Мои проекты Git\JD2_group_task\projectPerson\src\main\java\homework\actions\impl\DeleteFromDB.java
+D:\Мои проекты Git\JD2_group_task\projectPerson\src\main\java\homework\actions\CommandHandler.java
+D:\Мои проекты Git\JD2_group_task\projectPerson\src\main\java\homework\dao\factory\DAOFactory.java
+D:\Мои проекты Git\JD2_group_task\projectPerson\src\main\java\homework\dao\impl\DAOImpl.java
+D:\Мои проекты Git\JD2_group_task\projectPerson\src\main\java\homework\actions\impl\SelectFromDB.java
+D:\Мои проекты Git\JD2_group_task\projectPerson\src\main\java\homework\actions\enums\CommandNames.java
+D:\Мои проекты Git\JD2_group_task\projectPerson\src\main\java\homework\beans\Person.java
+D:\Мои проекты Git\JD2_group_task\projectPerson\src\main\java\homework\controller\Controller.java
+D:\Мои проекты Git\JD2_group_task\projectPerson\src\main\java\homework\App.java
+D:\Мои проекты Git\JD2_group_task\projectPerson\src\main\java\homework\actions\impl\InsertIntoDB.java
