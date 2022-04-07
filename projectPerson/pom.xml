@@ -29,7 +29,7 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.11</version>
+      <version>4.13.2</version>
       <scope>test</scope>
     </dependency>
     <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
@@ -44,17 +44,6 @@
       <artifactId>mysql-connector-java</artifactId>
       <version>8.0.28</version>
     </dependency>
-    <!-- https://mvnrepository.com/artifact/org.liquibase/liquibase-core -->
-    <dependency>
-      <groupId>org.liquibase</groupId>
-      <artifactId>liquibase-core</artifactId>
-      <version>4.9.1</version>
-    </dependency>
-    <dependency>
-      <groupId>org.jacoco</groupId>
-      <artifactId>jacoco-maven-plugin</artifactId>
-      <version>0.8.7</version>
-    </dependency>
   </dependencies>
 
   <build>
@@ -65,16 +54,15 @@
         <artifactId>jacoco-maven-plugin</artifactId>
         <version>0.8.7</version>
         <executions>
-          <!-- attached to Maven test phase -->
           <execution>
+            <id>jacoco-initialize</id>
             <goals>
               <goal>prepare-agent</goal>
             </goals>
           </execution>
-          <!-- attached to Maven test phase -->
           <execution>
-            <id>report</id>
-            <phase>test</phase>
+            <id>jacoco-site</id>
+            <phase>package</phase>
             <goals>
               <goal>report</goal>
             </goals>
@@ -168,14 +156,6 @@
           <artifactId>maven-assembly-plugin</artifactId>
           <version>3.3.0</version>
         </plugin>
-          <plugin>
-              <groupId>org.apache.maven.plugins</groupId>
-              <artifactId>maven-compiler-plugin</artifactId>
-              <configuration>
-                  <source>8</source>
-                  <target>8</target>
-              </configuration>
-          </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-checkstyle-plugin</artifactId>
@@ -183,6 +163,15 @@
           <configuration>
             <configLocation>checkstyle.xml</configLocation>
           </configuration>
+          <executions>
+            <execution>
+              <id>validate</id>
+              <phase>validate</phase>
+              <goals>
+                <goal>check</goal>
+              </goals>
+            </execution>
+          </executions>
         </plugin>
       </plugins>
     </pluginManagement>
